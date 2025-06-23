@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cuango Prospect</title>
   <link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <!-- SEO META -->
   <meta name="description" content="Cuango Prospect – Discreet strategic risk and security solutions in hostile and complex regions.">
@@ -20,24 +20,24 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cuangoprospect.com">
   <meta property="og:image" content="https://cuangoprospect.com/logo.png">
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
   <header>
     <h1>Cuango Prospect</h1>
     <p>Operated by Farside Actual</p>
   </header>
+
   <nav>
     <a href="leadership.html">Senior Leadership</a>
   </nav>
+
   <main>
     <section>
       <h2>Strategic Risk | Intelligence Integration | Asset Continuity</h2>
       <p>We operate where governance ends.</p>
       <p>Cuango Prospect specialises in discreet strategic solutions for clients navigating hostile, opaque, or rapidly evolving environments. Our core advisors and field operators have supported missions across the security, energy, political, and defence sectors, often in regions considered grey or denied.</p>
     </section>
+
     <section>
       <ul>
         <li>Ground-level project assurance in fluid threat environments</li>
@@ -48,9 +48,11 @@
         <li>Crisis suite coordination and post-incident actioning</li>
       </ul>
     </section>
+
     <section>
       <p>From the mineral belts of Central Africa to energy corridors in the Middle East, from South American interiors to Eurasian critical assets, our work is discreet, necessary, and enduring.</p>
     </section>
+
     <section class="contact">
       <h3>Contact</h3>
       <form id="contact-form">
@@ -67,138 +69,37 @@
         Thank you — message sent securely.
       </p>
     </section>
-
-    <script>
-      const form = document.getElementById("contact-form");
-      const thankYou = document.getElementById("thank-you");
-
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        const data = new FormData(form);
-        fetch("https://formsubmit.co/ajax/bab2ecb6e191991251cbe54f86512bfa", {
-          method: "POST",
-          body: data
-        })
-        .then(response => {
-          if (response.ok) {
-            form.reset();
-            thankYou.style.display = "block";
-          } else {
-            alert("Message failed. Please try again later.");
-          }
-        })
-        .catch(error => {
-          alert("Something went wrong.");
-          console.error(error);
-        });<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cuango Prospect</title>
-  <link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-  <!-- SEO META -->
-  <meta name="description" content="Cuango Prospect – Discreet strategic risk and security solutions in hostile and complex regions.">
-  <meta name="keywords" content="cuango, farside actual, strategic security, risk advisory, HUMINT, SIGINT, private military, crisis response, asset continuity">
-  <meta name="author" content="Northman Stratsec Ltd">
-  <meta name="robots" content="index, follow">
-
-  <!-- SOCIAL / PREVIEW (Open Graph) -->
-  <meta property="og:title" content="Cuango Prospect">
-  <meta property="og:description" content="Discreet strategic solutions. Operational where governance ends.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cuangoprospect.com">
-  <meta property="og:image" content="https://cuangoprospect.com/logo.png">
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
-  <header>
-    <h1>Cuango Prospect</h1>
-    <p>Operated by Farside Actual</p>
-  </header>
-  <nav>
-    <a href="leadership.html">Senior Leadership</a>
-  </nav>
-  <main>
-    <section>
-      <h2>Strategic Risk | Intelligence Integration | Asset Continuity</h2>
-      <p>We operate where governance ends.</p>
-      <p>Cuango Prospect specialises in discreet strategic solutions for clients navigating hostile, opaque, or rapidly evolving environments. Our core advisors and field operators have supported missions across the security, energy, political, and defence sectors, often in regions considered grey or denied.</p>
-    </section>
-    <section>
-      <ul>
-        <li>Ground-level project assurance in fluid threat environments</li>
-        <li>Strategic advisory on infrastructure continuity, asset extraction, and political stabilisation</li>
-        <li>Intelligence-led risk monitoring (HUMINT, SIGINT, IMINT)</li>
-        <li>Embedded support for governmental and private sector initiatives</li>
-        <li>Executive and diplomatic movement support</li>
-        <li>Crisis suite coordination and post-incident actioning</li>
-      </ul>
-    </section>
-    <section>
-      <p>From the mineral belts of Central Africa to energy corridors in the Middle East, from South American interiors to Eurasian critical assets, our work is discreet, necessary, and enduring.</p>
-    </section>
-    <section class="contact">
-      <h3>Contact</h3>
-      <form id="contact-form">
-        <label for="name">Your Name / Alias / Handle</label>
-        <input type="text" name="name" required>
-
-        <label for="message">Message</label>
-        <textarea name="message" rows="5" required></textarea>
-
-        <button type="submit">Initiate Contact</button>
-      </form>
-
-      <p id="thank-you" style="display:none; margin-top: 1em; color: orange;">
-        Thank you — message sent securely.
-      </p>
-    </section>
-
-    <script>
-      const form = document.getElementById("contact-form");
-      const thankYou = document.getElementById("thank-you");
-
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        const data = new FormData(form);
-        fetch("https://formsubmit.co/ajax/bab2ecb6e191991251cbe54f86512bfa", {
-          method: "POST",
-          body: data
-        })
-        .then(response => {
-          if (response.ok) {
-            form.reset();
-            thankYou.style.display = "block";
-          } else {
-            alert("Message failed. Please try again later.");
-          }
-        })
-        .catch(error => {
-          alert("Something went wrong.");
-          console.error(error);
-        });
-      });
-    </script>
   </main>
+
   <footer>
     <p>© Cuango Prospect – Operational discretion maintained</p>
   </footer>
-</body>
-</html>
 
+  <script>
+    const form = document.getElementById("contact-form");
+    const thankYou = document.getElementById("thank-you");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const data = new FormData(form);
+      fetch("https://formsubmit.co/ajax/bab2ecb6e191991251cbe54f86512bfa", {
+        method: "POST",
+        body: data
+      })
+      .then(response => {
+        if (response.ok) {
+          form.reset();
+          thankYou.style.display = "block";
+        } else {
+          alert("Message failed. Please try again later.");
+        }
+      })
+      .catch(error => {
+        alert("Something went wrong.");
+        console.error(error);
       });
-    </script>
-  </main>
-  <footer>
-    <p>© Cuango Prospect – Operational discretion maintained</p>
-  </footer>
+    });
+  </script>
 </body>
 </html>
