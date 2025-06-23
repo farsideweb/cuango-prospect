@@ -35,19 +35,48 @@
     </section>
     <section class="contact">
   <h3>Contact</h3>
-  <form action="https://formsubmit.co/bab2ecb6e191991251cbe54f86512bfa" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://cuangoprospect.com">
-    
+  <form id="contact-form">
     <label for="name">Your Name / Alias / Handle</label>
     <input type="text" name="name" required>
-    
+
     <label for="message">Message</label>
     <textarea name="message" rows="5" required></textarea>
-    
+
     <button type="submit">Initiate Contact</button>
   </form>
+
+  <p id="thank-you" style="display:none; margin-top: 1em; color: orange;">
+    Thank you — message sent securely.
+  </p>
 </section>
+
+<script>
+  const form = document.getElementById("contact-form");
+  const thankYou = document.getElementById("thank-you");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+    fetch("https://formsubmit.co/ajax/bab2ecb6e191991251cbe54f86512bfa", {
+      method: "POST",
+      body: data
+    })
+    .then(response => {
+      if (response.ok) {
+        form.reset();
+        thankYou.style.display = "block";
+      } else {
+        alert("Message failed. Please try again later.");
+      }
+    })
+    .catch(error => {
+      alert("Something went wrong.");
+      console.error(error);
+    });
+  });
+</script>
+
 
   </main>
   <footer>
